@@ -66,10 +66,21 @@ section .photobox-Branding {
 }
 
 section .intro-heading {
+    color: #ECF0F1;
     position: absolute;
 }
+
 section .intro-container h2 {
     font-size: 3rem;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1.2rem;
 }
 
   @media (min-width: 767px) {
