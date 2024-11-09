@@ -1,5 +1,5 @@
 html {
-    background-color: #9fc2f0;
+    background-color: #f9eadc;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -11,15 +11,21 @@ body {
     flex-direction: column;
 }
 
+nav .navbar-nav li a{
+    color: #84615a !important;
+}
+
+
 .description-section{
     padding: 10px;
 }
 
 .location-desc {
-    background-color: #9fc2f0;
+    background-color: #84615a;
+    color:#f9eadc;
     padding: .5rem;
     font-family: 'Rubik', sans-serif;
-    border-radius: 10px;
+    border-radius: 2in;
     font-size: 1.5rem;
 }
 
@@ -28,31 +34,35 @@ section .intro-container {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #9fc2f0;
+    background-color:#f9eadc;
 }
 
 .intro-container h3,h2{
     font-family: 'Rubik', sans-serif;
     display: flex;
     justify-content: center;
-    color: #ECF0F1;
 }
 
-
-section .home-page-img {
-    max-width: 70%;
-    width: 100vw;
-    filter: brightness(50%);
+.header {
+    margin: 2rem;
+    padding-bottom: 2rem;
 }
 
 .intro-heading {
-    color: #ECF0F1;
     position: absolute;
 }
 
 section.intro-container h2 {
     font-size: 1rem;
 }
+
+/* Container that is in the middle of the screen */
+.container {
+    display: flex;
+    flex-direction: column;
+    color: #84615a;
+}
+
 
 p {
     display: block;
@@ -70,27 +80,24 @@ p {
     }
 }
 
-img.home-page-img {
-    border-radius: 50%;
+
+/* Footer */
+
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    background:#6cf;  /* Height of the footer */
 }
 
-.brief-intro {
-    background-color: #9fc2f0;
-    border-color:black;
-}
-
-.footer-container{
-    bottom: 0;
-    background-color: #9fc2f0;
+.intro-heading h2, .intro-heading h3, .description-container p, .footer-container p {
     text-align: center;
-    align-items: center;
+    color: #84615a;
 }
 
-.intro-heading h2, .intro-heading h3 {
-    text-align: center;
-    color: #ECF0F1;
-}
 
+/* Media adjustments due to screensizing */
 @media (min-width: 1200px) {
     .intro-heading h2 {
         font-size: 2.5rem; /* Larger screens */
