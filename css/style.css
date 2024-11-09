@@ -1,46 +1,26 @@
 html {
-    background-color: #ECF0F1;
+    background-color: #9fc2f0;
     font-family: 'Rubik', sans-serif;
 }
 
-nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    background-color: #ECF0F1;
-}
-
-nav .logo-container img{
-    width: auto;
-    max-width: 130px;
-    margin: 15px 5px;
-}
-
-nav .navigation-container {
-    width: 100%;
-}
-
-nav .navigation-container ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-nav .navigation-container ul li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav .navigation-container ul li a {
+body {
     font-family: 'Rubik', sans-serif;
-    text-decoration: none;
-    font-size: 1rem;
-    color: black;
-    padding: 10px 5px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.description-section{
+    padding: 10px;
+}
+
+.location-desc {
+    background-color: #9fc2f0;
+    padding: .5rem;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 10px;
+    font-size: 1.5rem;
 }
 
 section .intro-container {
@@ -48,30 +28,30 @@ section .intro-container {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color: #9fc2f0;
 }
 
 .intro-container h3,h2{
+    font-family: 'Rubik', sans-serif;
     display: flex;
     justify-content: center;
     color: #ECF0F1;
 }
 
 
-section .photobox-Branding {
-    max-width: 100%;
-    height: 100%;
+section .home-page-img {
+    max-width: 70%;
     width: 100vw;
     filter: brightness(50%);
 }
 
-section .intro-heading {
+.intro-heading {
     color: #ECF0F1;
     position: absolute;
 }
 
-section .intro-container h2 {
-    font-size: 3rem;
+section.intro-container h2 {
+    font-size: 1rem;
 }
 
 p {
@@ -83,15 +63,67 @@ p {
     font-size: 1.2rem;
 }
 
-  @media (min-width: 767px) {
+@media (min-width: 767px) {
     nav .navigation-container ul li a {
       font-size: 1.125rem;
       padding: 30px 15px;
     }
-  }
+}
 
-@media screen and (max-width: 767px) {
-    nav .logo-container img {
-        max-height: 40px;
+img.home-page-img {
+    border-radius: 50%;
+}
+
+.brief-intro {
+    background-color: #9fc2f0;
+    border-color:black;
+}
+
+.footer-container{
+    bottom: 0;
+    background-color: #9fc2f0;
+    text-align: center;
+    align-items: center;
+}
+
+.intro-heading h2, .intro-heading h3 {
+    text-align: center;
+    color: #ECF0F1;
+}
+
+@media (min-width: 1200px) {
+    .intro-heading h2 {
+        font-size: 2.5rem; /* Larger screens */
+    }
+    .intro-heading h3 {
+        font-size: 1.75rem;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .intro-heading h2 {
+        font-size: 2rem; /* Medium screens */
+    }
+    .intro-heading h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .intro-heading h2 {
+        font-size: 1.5rem; /* Small screens */
+    }
+    .intro-heading h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-heading h2 {
+        font-size: 1.25rem; /* Extra small screens */
+    }
+    .intro-heading h3 {
+        font-size: 1rem;
+    }
+}
+
