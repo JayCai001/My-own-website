@@ -12,7 +12,15 @@ body {
 }
 
 nav .navbar-nav li a{
-    color: #84615a !important;
+    color: #f9eadc !important;
+}
+
+#name_header {
+    margin-top: 2rem;
+}
+
+#navbar_container {
+    background-color: #84615a;
 }
 
 
@@ -84,14 +92,20 @@ p {
 /* Footer */
 
 #footer {
-    position:absolute;
+    position:fixed;
     bottom:0;
+    left:0;
     width:100%;
     height:60px;   /* Height of the footer */
-    background:#6cf;  /* Height of the footer */
+    background:#84615a;
+    text-align: center;
 }
 
-.intro-heading h2, .intro-heading h3, .description-container p, .footer-container p {
+.footer-container p {
+    color: #f9eadc;
+}
+
+.intro-heading h2, .intro-heading h3, .description-container p{
     text-align: center;
     color: #84615a;
 }
